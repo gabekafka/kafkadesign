@@ -3,8 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Kafka Design</title>
+  <script>
+    function checkPassword() {
+      const pwd = prompt("Enter password to access FE Exam Materials:");
+      if (pwd === "YOUR_SECRET_PASSWORD") {
+        window.location.href = "fe-exam-resources.html";
+      } else {
+        alert("Incorrect password.");
+      }
+    }
+  </script>
 </head>
 <body>
-  <a href="fe-exam-resources.html">FE Exam Materials</a>
+  <a href="#" onclick="checkPassword()">FE Exam Materials</a>
 </body>
 </html>
